@@ -1,0 +1,34 @@
+###
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "username":"anu1234567",
+    "name":"apparao",
+    "password":"anu@54321",
+    "gender":"female",
+    "location":"Vizianagaram"
+}
+
+###
+GET http://localhost:4000/register
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "anu1234567",
+  "password":"1234567 "
+}
+
+###
+PUT http://localhost:4000/change-password
+Content-Type: application/json
+
+{
+  "username": "anu1234567",
+  "oldPassword": "anu@54321",
+  "newPassword": "1234567"
+}
+
